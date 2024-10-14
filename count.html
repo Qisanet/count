@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+</head>
+<style>
+    body{
+        background-color: yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+    div{
+        border: 4px solid black;
+      background-color: white;
+        height: 300px;
+        width: 500px;
+        margin-top: 200px;
+       
+    }
+    #number{
+        font-size: 40px;
+    }
+    button{
+        font-size: 30px;
+        background-color: orangered;
+
+    }
+    button:hover{
+        background-color: orange;
+    }
+</style>
+<body>
+ <div>  <h1>COUNTER</h1>
+        <p class="" id="number">0</p>
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+ </div>
+    
+    <script>
+        let numberElement = document.getElementById("number");
+        let number = 0;
+        
+        const increase = () => {
+            number++;
+            numberElement.textContent = number;
+        };
+        
+        const decrease = () => {
+            number--;
+            numberElement.textContent = number;
+        };
+    </script>
+</body>
+</html>
